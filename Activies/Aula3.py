@@ -15,4 +15,4 @@ delta= (b*b) -4 * a * c
 x1 = -b + math.sqrt(delta)/2*a
 x2 = -b - math.sqrt(delta)/2*a
 
-print('o valor de delta e: {} o valor de x¹ e: {} o valor de x² e: {}'.format(delta, x1, x2))
+print('o valor de delta e: {} \n o valor de x¹ e: {} \n o valor de x² e: {}'.format(delta, x1, x2))
