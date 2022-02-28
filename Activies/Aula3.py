@@ -1,18 +1,8 @@
-#Faça um coodigo que calcule o valor de BASCARA e reproduz seu resultado
+# FAÇA UM PROGRAMA QUE LEIA UM NUMERO E MOSTRE O SEU SUCESSOR E O ANTECESSOR
 
-import math
+n1 = int(input('digite um valor: '))
 
-a = int(input('digite o valor de a: '))
-b = int(input('digite o valor de b: '))
-c = int(input('digite o valor de c: '))
+ant = n1 - 1
+sec = n1 + 1
 
-#CALCULANDO DELTA
-
-delta= (b*b) -4 * a * c
-
-#CALCULANDO X¹ E X²
-
-x1 = -b + math.sqrt(delta)/2*a
-x2 = -b - math.sqrt(delta)/2*a
-
-print('o valor de delta e: {} \n o valor de x¹ e: {} \n o valor de x² e: {}'.format(delta, x1, x2))
+print('o antecessor do numero e: {}, e o sucessor e: {}'.format(ant, sec))
