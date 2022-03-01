@@ -1,8 +1,5 @@
 #Exercicio 3: fAÇA UM PROGRAMA QUE LEIA UM NUMERO E MOSTRE O SEU SUCESSOR E O ANTECESSOR
 
-from tokenize import Double
-
-
 n1 = int(input('digite um valor: '))
 
 ant = n1 - 1
