@@ -19,7 +19,7 @@ frase = ('aprendendo string em python')
 print(frase[0:8:2])
 
 #\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\#
-# o comando count conta quantas letras tem repetidas (lembrando que "O" maiusculo ≠ "o" minusculo)
+# o comando count conta quantas letras tem repetidas (lembrando que "O" maiusculo é ≠ "o" minusculo)
 
 frase = ('Aprendendo String usando Python')
 print(frase.count('a'))
@@ -54,7 +54,7 @@ print(len(frase.strip()))
 #\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\#
 
 # a função "replace" troca uma palavra pela outra mas FORA DA STRING.
-# as palavras devem ser exatamente iguais, levando em onta letras maiusculas e minusculas
+# as palavras devem ser exatamente iguais, levando em conta letras maiusculas e minusculas
 frase = ('Aprendendo String usando Python')
 print(frase.replace('Python', 'java'))
 
