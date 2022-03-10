@@ -25,17 +25,25 @@ print('milhar: {}'.format(m))
 
 #Exercicio 3: Crie um programa que leia o nome de um cidade e diga se ela começa ou não com o nome "SANTO".
 
+cidade = str(input('qual a sua cidade? ')).strip()
+print(cidade[:5].upper() == 'SANTO')
+
 #Exercicio 4: Crie um programa que leia o nome de uma passoa e diga se ela tem "SILVA" no nome.
 
 nome = input('voce tem silva em seu nome? digite-o para sabe: ')
-print('silva' in nome)
+print('silva' in nome.lower())
 
 #Exercicio 5: Fasa um programa que leia uma frase palo teclado e mostre: 
 # Quantas vezas aparaca a latra "A".
 # Em que posição ela aparece na primeira vez. Em que posisão ela aparace na última vez.
 
+frase = str(input('digite uma frase: ')).lower().strip()
+print('a letra a aparece: {} vezes'.format(frase.count('a')))
+print('a primeira letra a aparece na posição: {}. \ne a ultima na posição: {}.'.format(frase.find('a')+1, frase.rfind('a')+1))
+
 #Exercicio 6: Faça um programa que leia o nome completo de uma passoa e mostre primeiro e o ultimo nome separadamante.
 
-nome = input('qual o seu nome completo ? ')
+nome = input('qual o seu nome completo ? ').strip()
 lista = nome.split()
-print(lista[:])
+print('seu primeiro nome e: {}'.format(lista[0]))
+print('seu ultimo nome e: {}'.format(lista[len(lista)-1]))
