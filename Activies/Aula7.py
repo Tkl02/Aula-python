@@ -1,6 +1,7 @@
 #Exercicio 1:Escreva um programa que faça o computador "pensar" em um número inteiro entre O e 5 peça para ousuário tentar 
 # dascobrir qual foi o número ascolhido palo computador. O programa davará escrever na tela se o usuário venceu ou perdeu.
 
+from time import sleep
 from random import randint
 
 
@@ -54,6 +55,25 @@ n1 = int(input('primeiro numero: '))
 n2 = int(input('segundo numero: '))
 n3 = int(input('terceiro numero: '))
 
+print('-=-'*9)
+print('ANALISANDO...')
+print('-=-'*9)
+
+sleep(2.2)
+
+if n1 < n2 and n1 < n3:
+    print('o menor numero e: ', n1)
+if n2 < n1 and n2 < n3:
+    print('o menor numero e: ', n2)
+if n3 < n1 and n3 < n2:
+    print('o menor numero e: ', n3)
+if n1 > n2 and n1 > n3:
+    print('o maior numero e: ', n1)
+if n2 > n1 and n2 > n3:
+    print('o maior numero e: ', n2)
+if n3 > n1 and n3 > n2:
+    print('o maior numero e: ', n3)
+
 
 #Exercicio 7: Escreva um programa que pargunta o salário de um Funcionário e calcule o valor do seu aumento.
 # Para salários superiores a RS1.250.00. calcula um aumento de 10%. Para os inferiores ou iguais. o aumanto é de 15%.
@@ -67,3 +87,23 @@ else:
     print('voce ganhou um aumento de 10%, agora recebera: {}R$'.format(aumento))
 
 #Exercicio 8: Dasenvolva um programa que leia o comprimento de três retas a diga ao usuário se elas podem ou nÃo formar um triângulo.
+
+print('-=-'*10)
+print('    analisar o trinagulo')
+print('-=-'*10)
+sleep(1)
+
+r1 = float(input('primeira reta: '))
+r2 = float(input('segunda reta: '))
+r3 = float(input('terceira reta: '))
+
+print('-=-'*10)
+print('         ANALISANDO...')
+print('-=-'*10)
+
+sleep(1.8)
+
+if r1 < r2 + r3 and r2 < r3 + r1 and r3 < r1 + r2:
+    print('e possivel fazer um triangulo')
+else:
+    print('e impossivel fazer um triangulo')
