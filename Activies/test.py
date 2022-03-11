@@ -1,10 +1,24 @@
-n1 = int(input('primeiro numero: '))
-n2 = int(input('segundo numero: '))
-n3 = int(input('terceiro numero: '))
+# Uso para testar modificaçoes nos coodigos separadamente
 
-if n1 < n2 and n1 < n3:
-    print('o menor numero e: ', n1)
-if n2 < n1 and n2 < n3:
-    print('o menor numero e: ', n2)
-if 
-    
+from time import sleep
+
+
+print('-=-'*10)
+print('    analisar o trinagulo')
+print('-=-'*10)
+sleep(1)
+
+r1 = float(input('primeira reta: '))
+r2 = float(input('segunda reta: '))
+r3 = float(input('terceira reta: '))
+
+print('-=-'*10)
+print('         ANALISANDO...')
+print('-=-'*10)
+
+sleep(1.8)
+
+if r1 < r2 + r3 and r2 < r3 + r1 and r3 < r1 + r2:
+    print('e possivel fazer um triangulo')
+else:
+    print('e impossivel fazer um triangulo')
