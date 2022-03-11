@@ -42,7 +42,18 @@ else:
 
 #Exercicio 5: Faça um programa que leia um ano qualquer e mostre se ale é BISSEXTO.
 
+ano = int(input('qual o ano que deseja analisar? '))
+if ano % 4 ==0 and ano % 100 != 0 or ano % 400 == 0:
+    print('o ano {} e bissexto.'.format(ano))
+else:
+    print('o ano {} não e bissexto.'.format(ano))
+
 #Exercicio 6:Faça um programa que leia três números e mostre qual é o maior e qual é o menor.
+
+n1 = int(input('primeiro numero: '))
+n2 = int(input('segundo numero: '))
+n3 = int(input('terceiro numero: '))
+
 
 #Exercicio 7: Escreva um programa que pargunta o salário de um Funcionário e calcule o valor do seu aumento.
 # Para salários superiores a RS1.250.00. calcula um aumento de 10%. Para os inferiores ou iguais. o aumanto é de 15%.
