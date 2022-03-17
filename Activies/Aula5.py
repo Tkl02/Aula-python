@@ -8,7 +8,7 @@ from posixpath import split
 frase = ('aprendendo string em python')
 print(frase[8])
 
-# o coodigo mostrara a letra correspondente ao numero de "casa".
+# o coodigo mostrara a letra correspondente ao numero de "casas".
 
 frase = ('aprendendo string em python')
 print(frase[0:8])
@@ -19,7 +19,7 @@ frase = ('aprendendo string em python')
 print(frase[0:8:2])
 
 #\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\#
-# o comando count conta quantas letras tem repetidas (lembrando que "O" maiusculo é ≠ "o" minusculo)
+# o comando count conta quantas letras se repetem na frase (lembrando que "O" maiusculo é ≠ "o" minusculo)
 
 frase = ('Aprendendo String usando Python')
 print(frase.count('a'))
