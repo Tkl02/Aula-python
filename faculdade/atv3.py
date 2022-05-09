@@ -1,5 +1,10 @@
 from gtts import gTTS             #bibliotecas
 from playsound import playsound
+import pyttsx3
+
+engine = pyttsx3.init('sapi5')
+voices = engine.getProperty('voices')
+engine.setProperty('voice', voices[1].id)
 
 text = str(input("qual a frase? "))  #variavel para selecionar texto
 idioma = str(input("qual idioma"))   #variavel para selecionar idioma
