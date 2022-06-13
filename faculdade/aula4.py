@@ -1,3 +1,5 @@
+#trabalhano com imagem
+
 # pip install opencv-python
 # pip install numpy
 

@@ -1,3 +1,5 @@
+#criando PDF
+
 from reportlab.pdfgen import canvas
 
 def generatePDF(lista):

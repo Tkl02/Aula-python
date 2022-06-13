@@ -1,3 +1,5 @@
+#criando arquivo txt
+
 nome_aluno = ["alexandre","lucas","leo","joao","zeze","felipe"]
 
 with open ("aluno.txt", "w") as writer:

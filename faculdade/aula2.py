@@ -1,3 +1,5 @@
+#leito de bateria
+
 import psutil  #biblioteca 
 
 # acesso o sensor da bateria
