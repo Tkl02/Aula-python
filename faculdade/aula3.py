@@ -4,11 +4,13 @@ from gtts import gTTS
 
 from playsound import playsound
 
+a = str(input('digite a frase: '))
+
 audio = 'meusom.mp3'
 idioma = 'pt-br'
 
 convers = gTTS (
-    text = 'aqui nois mata onça memo',
+    text = (a),
     lang = idioma
 )
 convers.save(audio)
