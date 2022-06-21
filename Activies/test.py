@@ -1,10 +1,7 @@
 # Uso para testar modificaçoes nos coodigos separadamente
 
-import math
+from bs4 import BeautifulSoup
+import requests
+import pandas as pd
 
-r = float(input("numero: "))
-n = 3.14159
-
-a = n * (r**2)
-
-print("R = {:.4f}".format(a))
+html = pd.read_html('https://www.uol.com.br/esporte/futebol/')
