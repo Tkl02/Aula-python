@@ -11,9 +11,9 @@ soup = BeautifulSoup(html, 'html.parser') #fazendo a converçao de texto para es
 result = soup.find(class_= '-gray -line-height-24 _center') #buscando texto pela class
 
 atribut = soup.find(class_='variables-list')
-#tempMin = soup.find(id='min-temp-1')#busca de temp min pelo ID
-#tempMax = soup.find(id='max-temp-1')#busca de temp max pelo ID
+tempMin = soup.find(id='min-temp-1')#busca de temp min pelo ID
+tempMax = soup.find(id='max-temp-1')#busca de temp max pelo ID
 
 print(result.text)
 print(atribut.text)
-#print("temperatura min {} max {}.".format(tempMin.string, tempMax.string))
+print("temperatura min {} max {}.".format(tempMin.string, tempMax.string))
