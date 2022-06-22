@@ -1,15 +1,12 @@
 # Uso para testar modificaçoes nos coodigos separadamente
-
-
-
 from bs4 import BeautifulSoup
 import requests
 
 url = "https://coinmarketcap.com/"
 result = requests.get(url).text
 doc = BeautifulSoup(result, "html.parser")
-x = doc.select('tbody').content
-tbody = doc.x
+
+tbody = doc.tbody
 trs = tbody.contents
 
 prices = {}
