@@ -53,4 +53,3 @@ if id_num ==4: # quarta condiçao (pega dados dos top 10 bitcoins)
         prices[fixed_name] = fixed_price # formatando nome e preço da criptomoedas
             
     print('\n\n {} \n\n'.format(prices)) # printando resultados
-

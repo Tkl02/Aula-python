@@ -69,6 +69,3 @@ pyautogui.mouseDown(1183,700)
 pyautogui.mouseDown(1138,635)
 
 pyautogui.mouseUp()
-
-
-
