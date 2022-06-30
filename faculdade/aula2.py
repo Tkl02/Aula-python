@@ -1,10 +1,7 @@
 #leito de bateria
 
-import psutil  #biblioteca 
+import psutil  # importa biblioteca psutil(monitoramento de sistema)
 
-# acesso o sensor da bateria
-bateria = psutil.sensors_battery() 
-# #capturar o nivel da bateria 
-nivel = str(bateria.percent)
-# #mostrar o nivel da bateria
-print('bateria {}%'.format(nivel))
+bateria = psutil.sensors_battery() # acesso o sensor da bateria
+nivel = str(bateria.percent) # capturar o nivel da bateria 
+print('bateria {}%'.format(nivel)) # mostrar o nivel da bateria
