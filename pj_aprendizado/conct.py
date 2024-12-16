@@ -1,22 +1,12 @@
 import socket
+import ipaddress
 
-server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-ip = "0.0.0.0"
-port = 8888
+def get_local_network():
+    hostname = socket.gethostname()
+    local_ip = socket.gethostbyname(hostname)
+    network = ipaddress.ip_network(f"{local_ip}/24", strict=False)
+    return local_ip, network
 
-try:
-    server.bind((ip, port))
-    server.listen(5)
-    print(f"escutando:{ip}:{port}")
-
-    (client_socket, address)=server.accept()
-
-    while True:
-        data = client_socket.recv(1500)
-        
-        if data == "exit":
-            server.close()
-    
-except Exception as error:
-    print (error)
-    server.close()
+local_ip, network = get_local_network()
+print(f"IP Local: {local_ip}")
+print(f"Rede: {network}")
