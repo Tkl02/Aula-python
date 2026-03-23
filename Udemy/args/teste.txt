@@ -1,4 +1,0 @@
-arquivo
-para
-testa
-ferramenta de leitura.
