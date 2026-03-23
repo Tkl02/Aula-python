@@ -1,28 +1,38 @@
-pessoa = {}
-
-pessoa1 = {
-    "name": "nome",
-    "lastname": "sobrenome",
-    "years": "idade",
-    "tall": "altura",
-    "adress": "endereço",
-}
+hillis_array = [8, 2, 6, 4, 9, 0, 13, 7, 1, 5, 7, 3, 6, 9, 1, 2]
 
 
-name = "name"
-lastname = "lastname"
-years = "years"
-tall = "tall"
-adress = "adress"
+n = len(hillis_array)
+out = hillis_array[:]
+step = 0
+print("-" * 25)
 
-pessoa = {
-    "name": "nome",
-    "lastname": "ultimo nome",
-    "years": 21,
-    "tall": 2.2,
-    "adress": "cu do mundo",
-}
+print(n)
+print(out)
+print(step)
+print("-" * 25)
 
-print(type(pessoa))
-print("--" * 15)
-print(type(pessoa1))
+
+while (1 << step) < n:
+
+    jump = 1 << step
+    next_out = out[:]
+
+    print("-" * 25)
+    print(jump)
+    print(next_out)
+    print(n)
+    print("-" * 25)
+
+    for i in range(jump, n):
+        print(jump)
+        print(n)
+        next_out[i] = out[i] + out[i - jump]
+        print(next_out)
+
+    print("-" * 25)
+    out = next_out
+    step += 1
+
+print("-" * 25)
+print(out)
+print(step)
